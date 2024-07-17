@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Employee Website - News and Updates</title>
+  <title>Employee Website - Login and Registration</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -40,20 +40,42 @@
       padding: 20px;
     }
 
-    .news {
-      max-width: 800px;
+    .login-form {
+      max-width: 400px;
       margin: 0 auto;
       padding: 20px;
       background-color: #f2f2f2;
     }
 
-    .news h1 {
+    .login-form h1 {
       font-size: 24px;
       margin-bottom: 20px;
     }
 
-    .news p {
-      font-size: 18px;
+    .login-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .login-form input[type="submit"],
+    .login-form input[type="button"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
     }
 
     footer {
@@ -62,17 +84,30 @@
       padding: 10px;
       text-align: center;
     }
+    .qr-codes-footer img {
+            width: 200px;
+            height: 250px;
+            margin: 0 10px;
+            margin-left: 1000px ;
+    }
+    .social-media img, .contact-us img {
+            width: 80px;
+            height: 80px;
+            vertical-align: middle;
+            margin-right: 5px;
+            border-radius: 50%;
+        }
   </style>
   <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
 <body>
   <header>
-          <div class="logo">
+      <div class="logo">
           <img src="Logo.png" alt="Gize Gebeya logo">
       </div>
     <nav>
       <ul>
-      <li><a href="index.html">Home</a></li>
+<li><a href="index.html">Home</a></li>
         <!--<li><a href="#">Login and Registration</a></li>-->
         <li><a href="E Dashboard.html">Dashboard</a></li>
         <li><a href="E Profile Page.html">Employee Profile Page</a></li>
@@ -87,14 +122,30 @@
   </header>
 
   <main>
-    <section class="news">
-      <h1>News and Updates</h1>
-      <p>Welcome to the news and updates section. Here you can find the latest news, announcements, and updates related to the company and its employees.</p>
+    <section class="login-form">
+      <h1>Login and Registration</h1>
+
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="button-group">
+          <input type="submit" value="Login">
+          <input type="button" value="Register">
+        </div>
+      </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2023 Employee Website. All rights reserved.</p>
+    <div class="qr-codes-footer">
+      <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
+      <img src="QR CODE FOR EMPLOYEES.png" alt="qrcodeforemployees"></a>
+  </div>
   </footer>
 </body>
 </html>
