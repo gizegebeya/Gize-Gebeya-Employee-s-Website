@@ -2,7 +2,9 @@
 <html>
 <head>
   <title>Employee Website - Employee Department Page</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,50 +15,56 @@
       background-color: #333;
       color: #fff;
       padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     .logo img {
       height: auto;
-      max-width: 10%;
+      max-width: 50px;
       border-radius: 50%;
-      margin-right: 60%;
-          }
+      margin-right: 10px;
+    }
 
     nav ul {
       margin: 0;
       padding: 0;
       list-style: none;
+      display: flex;
     }
 
     nav ul li {
-      display: inline;
-      margin-right: 10px;
+      margin-left: 10px;
     }
 
     nav ul li a {
       color: #fff;
       text-decoration: none;
     }
-   
-
 
     main {
       padding: 20px;
     }
 
-    .hero {
-      background-color: #f2f2f2;
+    .profile {
+      max-width: 800px;
+      margin: 0 auto;
       padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+    }
+
+    .profile h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
       text-align: center;
     }
 
-    .hero h1 {
-      font-size: 36px;
-      color: #333;
-    }
-
-    .hero p {
+    .profile p {
       font-size: 18px;
       color: #666;
+      text-align: center;
     }
 
     footer {
@@ -65,30 +73,62 @@
       padding: 10px;
       text-align: center;
     }
+
     .qr-codes-footer img {
-            width: 200px;
-            height: 250px;
-            margin: 0 10px;
-            margin-left: 1000px ;
+      width: 100px; /* Adjusted width for responsiveness */
+      height: auto;
+      margin: 10px;
     }
-    .social-media img, .contact-us img {
-            width: 80px;
-            height: 80px;
-            vertical-align: middle;
-            margin-right: 5px;
-            border-radius: 50%;
-        }
+
+    .social-media img,
+    .contact-us img {
+      width: 40px; /* Adjusted width for responsiveness */
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 5px;
+      border-radius: 50%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .logo img {
+        max-width: 40px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .profile {
+        padding: 15px;
+      }
+
+      .qr-codes-footer img {
+        width: 80px;
+      }
+
+      .social-media img,
+      .contact-us img {
+        width: 30px;
+        height: 30px;
+      }
+    }
   </style>
   <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
 <body>
   <header>
-          <div class="logo">
-          <img src="Logo.png" alt="Gize Gebeya logo">
-      </div>
+    <div class="logo">
+      <img src="Logo.png" alt="Gize Gebeya logo">
+    </div>
     <nav>
       <ul>
-    <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <!--<li><a href="#">Login and Registration</a></li>-->
         <li><a href="E Dashboard.html">Dashboard</a></li>
         <li><a href="E Profile Page.html">Employee Profile Page</a></li>
@@ -104,8 +144,8 @@
 
   <main>
     <section class="profile">
-      <h1>Department pages</h1>
-      <p>Welcome to the employees department page. Here you can here you can view which department you are placed and infrmation about your department.</p>
+      <h1>Department Pages</h1>
+      <p>Welcome to the Employee Department Pages. Here you can view information about your department.</p>
     </section>
   </main>
 
@@ -113,8 +153,9 @@
     <p>&copy; 2023 Employee Website. All rights reserved.</p>
     <div class="qr-codes-footer">
       <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
-      <img src="QR CODE FOR EMPLOYEES.png" alt="qrcodeforemployees"></a>
-  </div>
+        <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code for Employees">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
