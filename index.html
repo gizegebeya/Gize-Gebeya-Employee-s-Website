@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
   <style>
+    /* General styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -11,20 +14,21 @@
 
     header {
       background-color: #333;
-      color: #ffffff;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
+
     .logo img {
       height: auto;
-      max-width: 10%;
+      max-width: 70px; /* Adjusted logo size */
       border-radius: 50%;
-      margin-right: 60%;
-}
+      margin-right: 10px;
+    }
 
     nav {
       background-color: #f2f2f2;
-      padding: 20px;
+      padding: 10px 0; /* Adjusted padding */
       text-align: center;
     }
 
@@ -35,46 +39,86 @@
     }
 
     nav ul li {
-      display: inline;
-      margin-right: 35px;
+      display: inline-block; /* Changed to inline-block for better spacing */
+      margin-right: 20px;
     }
 
     nav ul li a {
       color: #333;
       text-decoration: none;
       padding: 10px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #666; /* Darken on hover */
     }
 
     section {
-      padding: 150px;
+      padding: 50px 20px; /* Adjusted padding */
       text-align: center;
     }
 
     footer {
       background-color: #333;
       color: #fff;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
+    }
 
+    .social-media {
+      margin-top: 20px;
     }
+
     .social-media a {
-      color: #fff;
-      text-decoration: none;
+      display: inline-block; /* Added display type */
       margin: 0 10px;
+      text-decoration: none;
+      transition: transform 0.3s ease; /* Added transition */
     }
+
+    .social-media a:hover {
+      transform: scale(1.2); /* Scale on hover */
+    }
+
+    .social-media img,
+    .contact-us img {
+      width: 50px; /* Adjusted social media icon size */
+      height: auto;
+      vertical-align: middle;
+      border-radius: 50%;
+    }
+
     .qr-codes-footer img {
-            width: 200px;
-            height: 250px;
-            margin: 0 10px;
-            margin-left: 1000px ;
+      width: 150px; /* Adjusted QR code size */
+      height: auto;
+      margin: 10px;
     }
-    .social-media img, .contact-us img {
-            width: 80px;
-            height: 80px;
-            vertical-align: middle;
-            margin-right: 5px;
-            border-radius: 50%;
-        }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .logo img {
+        max-width: 50px; /* Adjusted logo size for smaller screens */
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0; /* Adjusted margin for smaller screens */
+      }
+
+      .social-media a {
+        margin: 0 5px; /* Adjusted social media icons margin */
+      }
+
+      .social-media img,
+      .contact-us img {
+        width: 40px; /* Adjusted social media icon size for smaller screens */
+      }
+
+      .qr-codes-footer img {
+        width: 100px; /* Adjusted QR code size for smaller screens */
+      }
+    }
   </style>
   <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
@@ -82,45 +126,49 @@
   <header>
     <div class="logo">
       <img src="Logo.png" alt="Gize Gebeya logo">
-  </div>
+    </div>
     <h1>Welcome to Gize Gebeya Website</h1>
     <p>Providing Quality Services Since 2015</p>
   </header>
 
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Products.html">Products</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="About Us.html">About Us</a></li>
-      <li><a href="Blog.html">Blog</a></li>
-    </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!--<li><a href="#">Login and Registration</a></li>-->
+        <li><a href="E Dashboard.html">Dashboard</a></li>
+        <li><a href="E Profile Page.html">Employee Profile Page</a></li>
+        <li><a href="E Directory.html">Employee Directory</a></li>
+        <!--<li><a href="#">Document Repository</a></li>-->
+        <li><a href="E News and Updates.html">News and Updates</a></li>
+        <li><a href="E Department Pages.html">Department Pages</a></li>
+        <li><a href="E FAQs and Help Center.html">FAQs and Help Center</a></li>
+        <li><a href="E Contact Page.html">Contact Page</a></li>
+      </ul>
   </nav>
 
   <section>
     <h2>Welcome to Our Home Page</h2>
-    <p>UNLEASH YOUR INVESTMENT POTENTIAL.<BR>Find your dream house And car with us.</p>
+    <p>UNLEASH YOUR INVESTMENT POTENTIAL.<br>Find your dream house and car with us.</p>
   </section>
 
   <footer>
-    <p>Contact us at: Phone: +251978906766/+251973126041 | Email: gizegebeyacompany@gmail.com</p>
-    <section>
-      <div class="social-media">
-        <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
-        <a href="https://www.tiktok.com/@gizegebeyasales?_r=1" class="social-icon"><img src="TIKTOK.png" alt="TIKTOK"></a>
-        <a href="#" class="social-icon"><img src="X.jpg" alt="X"></a>
-        <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="instagram"></a>
-        <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="facebook"></a>
-        <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="Telegram"></a>
-   
-      <a href="gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="gmail"></a>
-      <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="TELEGRAM"></a>
+    <p>Contact us at: Phone: +251978906766 / +251973126041 | Email: gizegebeyacompany@gmail.com</p>
+    <div class="social-media">
+      <a href="#" class="social-icon"><img src="Youtube.png" alt="YouTube"></a>
+      <a href="https://www.tiktok.com/@gizegebeyasales?_r=1" class="social-icon"><img src="TIKTOK.png" alt="TIKTOK"></a>
+      <a href="#" class="social-icon"><img src="X.jpg" alt="X"></a>
+      <a href="https://www.instagram.com/gizegebeya?igsh=bnVqdHNseXdqNDg=" class="social-icon"><img src="INSTAGRAM.jpg" alt="Instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=61550732175981" class="social-icon"><img src="FACEBOOK.png" alt="Facebook"></a>
+      <a href="https://t.me/gizegebeyasale" class="social-icon"><img src="Telegram channel.jpg" alt="Telegram"></a>
+      <a href="mailto:gizegebeyacompany@gmail.com" class="social-icon"><img src="GMAIL.png" alt="Gmail"></a>
+      <a href="https://t.me/gizegebeyacompany" class="social-icon"><img src="Telegram.jpg" alt="Telegram"></a>
     </div>
     <div class="qr-codes-footer">
       <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
-      <img src="QR CODE FOR EMPLOYEES.png" alt="qrcodeforemployees"></a>
-  </div>
-    </section>
+        <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code for Employees">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
