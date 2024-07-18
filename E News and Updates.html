@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Employee Website - Login and Registration</title>
+  <title>Employees News and Updates</title>
   <style>
     /* General styles */
     body {
@@ -15,190 +15,169 @@
     header {
       background-color: #333;
       color: #fff;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 20px;
+      text-align: center;
     }
 
     .logo img {
       height: auto;
-      max-width: 50px;
+      max-width: 70px; /* Adjusted logo size */
       border-radius: 50%;
       margin-right: 10px;
     }
 
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-left: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    .login-form {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
+    nav {
       background-color: #f2f2f2;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow for better visibility */
-    }
-
-    .login-form h1 {
-      font-size: 24px;
-      margin-bottom: 20px;
+      padding: 10px 0; /* Adjusted padding */
       text-align: center;
     }
 
-    .login-form label {
-      display: block;
-      margin-bottom: 10px;
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
 
-    .login-form input[type="email"],
-    .login-form input[type="password"] {
-      width: 100%;
+    nav ul li {
+      display: inline-block; /* Changed to inline-block for better spacing */
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
       padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      font-size: 16px;
+      transition: color 0.3s ease;
     }
 
-    .button-group {
-      display: flex;
-      justify-content: space-between;
+    nav ul li a:hover {
+      color: #666; /* Darken on hover */
     }
 
-    .login-form input[type="submit"],
-    .login-form input[type="button"] {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .login-form input[type="submit"]:hover,
-    .login-form input[type="button"]:hover {
-      background-color: #555;
+    section {
+      padding: 50px 20px; /* Adjusted padding */
+      text-align: center;
     }
 
     footer {
       background-color: #333;
       color: #fff;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
     }
 
-    .qr-codes-footer img {
-      width: 100px; /* Adjusted width for responsiveness */
-      height: auto;
-      margin: 10px;
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      display: inline-block; /* Added display type */
+      margin: 0 10px;
+      text-decoration: none;
+      transition: transform 0.3s ease; /* Added transition */
+    }
+
+    .social-media a:hover {
+      transform: scale(1.2); /* Scale on hover */
     }
 
     .social-media img,
     .contact-us img {
-      width: 40px; /* Adjusted width for responsiveness */
-      height: 40px;
+      width: 50px; /* Adjusted social media icon size */
+      height: auto;
       vertical-align: middle;
-      margin-right: 5px;
       border-radius: 50%;
+    }
+
+    .qr-codes-footer img {
+      width: 150px; /* Adjusted QR code size */
+      height: auto;
+      margin: 10px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
       .logo img {
-        max-width: 40px;
-      }
-
-      nav ul {
-        flex-direction: column;
-        align-items: center;
+        max-width: 50px; /* Adjusted logo size for smaller screens */
       }
 
       nav ul li {
-        margin: 5px 0;
+        display: block;
+        margin: 10px 0; /* Adjusted margin for smaller screens */
       }
 
-      .login-form {
-        padding: 15px;
-      }
-
-      .qr-codes-footer img {
-        width: 80px;
+      .social-media a {
+        margin: 0 5px; /* Adjusted social media icons margin */
       }
 
       .social-media img,
       .contact-us img {
-        width: 30px;
-        height: 30px;
+        width: 40px; /* Adjusted social media icon size for smaller screens */
+      }
+
+      .qr-codes-footer img {
+        width: 100px; /* Adjusted QR code size for smaller screens */
       }
     }
   </style>
-  <link rel="icon" type="image/png" href="favicon.jpeg">
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="Logo.png" alt="Gize Gebeya logo">
+      <img src="logo.png" alt="Company Logo">
+      <h1>Employees News and Updates</h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <!--<li><a href="#">Login and Registration</a></li>-->
-        <li><a href="E Dashboard.html">Dashboard</a></li>
-        <li><a href="E Profile Page.html">Employee Profile Page</a></li>
-        <li><a href="E Directory.html">Employee Directory</a></li>
-        <!--<li><a href="#">Document Repository</a></li>-->
-        <li><a href="E News and Updates.html">News and Updates</a></li>
-        <li><a href="E Department Pages.html">Department Pages</a></li>
-        <li><a href="E FAQs and Help Center.html">FAQs and Help Center</a></li>
-        <li><a href="E Contact Page.html">Contact Page</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="login-form">
-      <h1>Login and Registration</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Updates</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-      <form>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+  <section>
+    <h2>Welcome to Employees News and Updates</h2>
+    <p>This website is dedicated to providing the latest news and updates for our employees.</p>
+  </section>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+  <section>
+    <h2>Latest News</h2>
+    <article>
+      <h3>Company Expansion Announced</h3>
+      <p>We are excited to announce that our company is expanding into new markets. Read more about the details here.</p>
+      <a href="#">Read More</a>
+    </article>
+    <article>
+      <h3>New Employee Benefit Program Launched</h3>
+      <p>We are pleased to introduce a new employee benefit program that offers additional perks and opportunities. Check it out!</p>
+      <a href="#">Learn More</a>
+    </article>
+  </section>
 
-        <div class="button-group">
-          <input type="submit" value="Login">
-          <input type="button" value="Register">
-        </div>
-      </form>
-    </section>
-  </main>
+  <section>
+    <h2>Upcoming Updates</h2>
+    <article>
+      <h3>Performance Review Process Changes</h3>
+      <p>We are implementing changes to the performance review process to improve transparency and feedback. Stay tuned for more details.</p>
+      <a href="#">Get Updates</a>
+    </article>
+    <article>
+      <h3>New HR Information System</h3>
+      <p>A new HR information system will be rolled out soon, providing employees with enhanced tools and resources.</p>
+      <a href="#">Read About the Changes</a>
+    </article>
+  </section>
 
   <footer>
-    <p>&copy; 2023 Employee Website. All rights reserved.</p>
+    <p>&copy; 2024 Employee Website. All rights reserved.</p>
     <div class="qr-codes-footer">
       <a href="https://gizegebeya.github.io/Gize-Gebeya-Employee-s-Website/">
-        <img src="QR CODE FOR EMPLOYEES.png" alt="QR Code for Employees">
-      </a>
-    </div>
+      <img src="QR CODE FOR EMPLOYEES.png" alt="qrcodeforemployees"></a>
+  </div>
   </footer>
 </body>
 </html>
